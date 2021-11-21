@@ -8,5 +8,6 @@ deploy_to_heroku:
     - git remote add heroku https://heroku:$API_KEY@git.heroku.com/proyecto-datos.git
     - git branch
     - git checkout master
+    - heroku login
     - git push heroku master
 
