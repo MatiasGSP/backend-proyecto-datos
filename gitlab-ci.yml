@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+
+deploy_to_heroku:
+  stage: deploy
+  script:
+    - git remote add heroku https://heroku:$API_KEY@git.heroku.com/proyecto-datos.git
+    - git branch
+    - git checkout master
+    - git push heroku master
+
