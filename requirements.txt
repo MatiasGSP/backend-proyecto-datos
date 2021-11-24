@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 Flask
+=======
+Flask
+https://github.com/fastai/fastai1/archive/master.zip
+>>>>>>> develop
