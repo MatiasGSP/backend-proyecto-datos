@@ -1,7 +1,3 @@
-from fastai.basic_train import load_learner
-from fastai.vision import open_image
-from flask_cors import CORS
-
 class PredictionModelObject:
     def __init__(self):
         self.model="model-roadsign.pkl"
