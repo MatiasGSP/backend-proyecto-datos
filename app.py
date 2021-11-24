@@ -1,10 +1,15 @@
 from flask import Flask
+import os
+import sys
+from fastai.basic_train import load_learner
+from fastai.vision import open_image
+from flask_cors import CORS
+
+from routes.roadsign_bp import roadsign_bp
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-  return "Hello World!"
+app.register_blueprint(roadsign_bp, url_prefix='/roadsign')
 
 if __name__ == "__main__":
   app.run()
