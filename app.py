@@ -7,7 +7,7 @@ from routes.roadsign_bp import roadsign_bp
 
 app = Flask(__name__)
 
-app.register_blueprint(roadsign_bp, url_prefix='/roadsign')
+app.register_blueprint(roadsign_bp, url_prefix='/')
 
 if __name__ == "__main__":
   app.run()
