@@ -1,6 +1,4 @@
 from flask import Flask
-import os
-import sys
 from fastai.basic_train import load_learner
 from fastai.vision import open_image
 from flask_cors import CORS
