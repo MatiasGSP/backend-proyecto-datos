@@ -2,3 +2,4 @@ Flask
 https://github.com/fastai/fastai1/archive/master.zip
 gunicorn
 flask_cors
+torch
