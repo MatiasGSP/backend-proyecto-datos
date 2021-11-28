@@ -1,13 +1,15 @@
 from flask import Flask
-#from fastai.basic_train import load_learner
-#from fastai.vision import open_image
-#from flask_cors import CORS
-
+from flask_cors import CORS
 from routes.roadsign_bp import roadsign_bp
+
 
 app = Flask(__name__)
 
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
 app.register_blueprint(roadsign_bp, url_prefix='/')
+app.register_blueprint(roadsign_bp, url_prefix="/predict")
 
 if __name__ == "__main__":
+  "Main method of Flask application"
   app.run()
