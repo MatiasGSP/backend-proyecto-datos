@@ -3,7 +3,7 @@ from fastai.vision import open_image
 
 class PredictionModelObject:
         model="model_roadsign.pkl"
-        learner = load_learner(path='../prediction_model', file=model)
+        learner = load_learner(path='./prediction_model', file=model)
         classes = learner.data.classes
 
 
